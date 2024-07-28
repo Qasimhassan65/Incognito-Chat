@@ -4,7 +4,7 @@ import http from 'http';
 import { Server } from 'socket.io';
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000; // Use environment port or default to 3000
 const server = http.createServer(app);
 const io = new Server(server);
 
@@ -57,5 +57,5 @@ io.on('connection', (socket) => {
 });
 
 server.listen(PORT, () => {
-    console.log(`Server is running on ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
