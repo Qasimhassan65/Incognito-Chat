@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Inconsolata', monospace;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a.hover{
+    color: #149414;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
+    display: flex;
+    align-items: center;
+}
+
+header > .container-fluid
+{
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navb-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+
+header .navb-logo p {
+    width: 340px;
+    font-size: 42px;
+    color: green;
+    text-align: center;
+    margin-block: 5%;
+   
+}
+
+
+header .navb-logo img{
+    width: 80px;
+    height: 36px;
+  
+}
+
+header .navb-items{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-inline: 5%;
+}
+
+header .item{
+    text-align: center;
+    margin-inline: 10%;
+    font-size: 26px;
+    margin-right: 15px;
+    color: #102447;
+    padding : 5px 0;
+    transition: all .1s ease;
+    border-bottom: 0px solid #149414;
+    border-top: 0px solid #149414;
+    cursor : pointer;
+  
+
+}
+
+header .item:hover{
+    border-bottom: 3px solid #149414;
+    border-top: 3px solid #149414;
+  
+}
+
+header .item-button a{
+    background-color: white;
+    width: 220px;
+    height: 50px;
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: #149414;
+    transition: all 0.5s ease;
+    border-radius: 26px;
+    
+}
+
+header .item-button a:hover{
+    background-color: green;
+    color: white;   
+}
+
+#bar{
+    color: green;
+    font-size: 42px;
+  
+}
+
+.hero-section {
+    position: relative;
+    height: 600px;
+    background-image: url("/images/matrix4.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    margin-bottom: 75px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 3.3rem;
+    margin-bottom: 8px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8); 
+}
+
+
+#glow-button {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: transparent;
+    padding: 12px 30px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  
+}
+
+#glow-button:hover {
+    color: white;
+    background: #149414;
+    border: 2px solid #149414;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5; /* Improves readability */
+    color: white; /* Light gray color for text */
+    
+}
+
+.footer {
+    background-color: #000; /* Background color of the footer */
+    color: #fff; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Padding on top and bottom */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Inconsolata', monospace;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-family: 'Inconsolata', monospace;
+}
+
+@media (max-width: 771px) {
+
+    .hero-section { 
+        background-size: cover; /* Ensure the image covers the container */
+        background-position: right; /* Center the image */
+        background-repeat: no-repeat; /* Prevent repeating */
+    }
+    
+
+  
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-text a {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
+
